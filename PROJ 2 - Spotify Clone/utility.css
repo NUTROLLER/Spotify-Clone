@@ -1,0 +1,53 @@
+/* This is a special CSS file where some properties are written so that they can be used simply by adding their class name to an element. */
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.bg-gray {
+    background-color: #121212;
+}
+
+.rounded-border {
+    border-radius: 8px;
+}
+
+.marginb-10 {
+    margin-bottom: 10px;
+}
+
+.marginb-15 {
+    margin-bottom: 15px;
+}
+
+.padding-top-for-text {
+    padding-top: 5px;
+}
+
+.margin-Top {
+    margin-top: 20px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.center-text{
+    text-align: center;
+}
+.invert{
+    filter: invert(1);
+}
+.highlightSong{
+    background-color: #000000;
+}
+.border{
+    border: 1px solid red;
+}

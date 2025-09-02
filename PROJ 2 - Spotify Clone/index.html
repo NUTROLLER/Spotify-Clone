@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="spotify.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="left">
+            <div class="box1 bg-gray rounded-border">
+                <div class="home">
+                    <div class="logo flex">
+                        <img class="marginb-15 pointer" src="svg/logo.svg" alt="Logo">
+                        <div class="cross"><img id="close" width="30px" src="svg/cross.svg" alt="Close"></div>
+                    </div>
+                    <ul>
+                        <li id="home" class="marginb-15 pointer"><img src="svg/home.svg" alt="Home"><span
+                                class="padding-top-for-text underline">Home</span></li>
+                        <li class="marginb-15 pointer"><img src="svg/search.svg" alt="Search"><span
+                                class="padding-top-for-text underline">Search</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box2 bg-gray roxunded-border">
+                <div class="library">
+                    <ul>
+                        <li class="flex">
+                            <img src="svg/lib.svg" alt="Library"><span class="padding-top-for-text">Your Library</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overflowing">
+                    <div class="playlistfirst rounded-border">
+                        <span>Create your first playlist</span>
+                        <p style="margin: 20px 0px;">It's easy, we'll help you</p>
+                        <div><button class="divbutton center-text">Create Playlist</button></div>
+                    </div>
+                    <div class="playlistfirst rounded-border" style="margin: 10px 0px;">
+                        <span>Let's find some podcasts to follow</span>
+                        <p style="margin: 20px 0px;">We'll keep you updated on new episodes</p>
+                        <div><button class="divbutton center-text">Browse Podcasts</button></div>
+                    </div>
+                </div>
+                <div class="capsules">
+                    <div>
+                        <span><a href="https://www.spotify.com/in-en/legal/">Legal</a></span>
+                        <span><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy
+                                Center</a></span>
+                    </div>
+                    <div>
+                        <span><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></span>
+                        <span><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></span>
+                        <span><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></span>
+                    </div>
+                    <div>
+                        <span><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></span>
+                    </div>
+                    <span id="Bolder" class="underline"><a
+                            href="https://www.spotify.com/legal/cookies-policy/">Cookies</a></span>
+
+                </div>
+                <div class="language-bg-mobile-only">
+                <div class="language">
+                    <img src="svg/global.svg" alt="Language">English
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header bg-gray">
+                    <div class="hamburger">
+                        <img id="ham-menu" src="svg/hamburger.svg" alt="Menu" width="30px">
+                </div>
+                <div class="nav-arrow">
+                    <img src="svg/leftarrow.svg" alt="Back">
+                    <img style="transform: rotate(180deg);" src="svg/leftarrow.svg" alt="Forward">
+                </div>
+                <div class="buttons">
+                    <button id="signup">Sign up</button>
+                    <button id="login">Log in</button>
+                </div>
+            </div>
+            <div class="main">
+                <h2 style="padding: 20px 15px 5px 20px;">Popular artists</h2>
+                <div class="card-parent">
+                    <div class="card">
+                        <div class="play">
+                            <img src="svg/play.svg" alt="" srcset="">
+                        </div>
+                        <img class="artistimage" src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="Pritam"
+                            width="150px">
+                        <div class="artist-info">
+                            <h4>Pritam</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <img src="svg/play.svg" alt="" srcset="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb0261696c5df3be99da6ed3f3" alt="Arijit Singh"
+                            class="artistimage" width="150px" height="150px" style="object-fit:  cover;">
+                        <div class="artist-info">
+                            <h4>Arijit Singh</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <img src="svg/play.svg" alt="" srcset="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" class="artistimage" alt="AR Rahman"
+                            width="150px">
+                        <div class="artist-info">
+                            <h4>A.R. Rahman</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <img src="svg/play.svg" alt="" srcset="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" class="artistimage" alt="Atif Aslam"
+                            width="150px">
+                        <div class="artist-info">
+                            <h4>Atif Aslam</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <img src="svg/play.svg" alt="" srcset="">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf" alt="Vishal-Shekhar" class="artistimage"
+                            width="150px">
+                        <div class="artist-info">
+                            <h4>Vishal-Shekhar</h4>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="SONG">
+                        <h3 style="margin: 15px 15px; display: inline-block;">Songs available on your device:</h3>
+                            <ul>
+                                <!-- <li>Burning Town - Lind Ebros - Shadow Fight 2</li>
+                            <li>Khairiyat - Arijit Singh - Chichhore</li>
+                            <li>Kukkad - Vishal-Shekhar - Student of The Year</li>
+                            <li>Kun Faya Kun - AR Rahman - Rockstar</li>
+                            <li>Old Sensei - Lind Ebros - Shadow Fight 2</li>
+                            <li>Tu Jaane Na - Atif Aslam - Ajab Prem ki Gajab Kahani</li>
+                            <li>Tum Se Hi - Pritam - Jab We Met</li> -->
+                            </ul>
+                            
+                    </div>
+                    
+                    <div class="footer" style="border-top:1px solid rgb(112, 112, 112); padding-top:40px ;display: flex; justify-content: center; font-family:SpotifyLight; margin-bottom: 85px;"> 
+                        
+                        &copy;2024 Spotify AB
+                    </div>
+                </div> <!-- card parent-->
+               
+            </div><!-- main-->
+            
+        </div> <!-- Right div-->
+
+        <div class="playbar">
+            <div class="seekbar">
+                <div class="trail"></div>
+                <div class="seekerhead">
+                </div>
+            </div>
+            <div class="parentofplaybar">
+                <div class="songInfo">
+<!-- Song information -->
+                </div>
+<div class="songbuttoncont">
+                <div class="songbuttons">
+                    <img id="previous" title="Previous song" class="invert" src="svg/previous.svg" alt="Previous">
+                    <img id="play" title="Play" class="invert" src="svg/playsong.svg" alt="Play">
+                    <img id="next" title="Next song" class="invert" src="svg/forward.svg" alt="Forward">
+                </div>
+            </div>
+                <div class="songtime"></div>
+            </div>
+        </div>
+    </div>
+    </div> <!-- Parent-->
+    <script src="script.js"></script>
+</body>
+
+</html>
