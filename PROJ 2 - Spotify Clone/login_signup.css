@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "SpotifyBold";
+    src: url("fonts/Gotham-Bold.otf");
+}
+
+@font-face {
+    font-family: "SpotifyRegular";
+    src: url("fonts/GothamBook.ttf");
+}
+
+@font-face {
+    font-family: "SpotifyLight";
+    src: url("fonts/Gotham-Light.otf");
+}
+
+body{
+    background-color: #121212;
+    color: white
+}
+.welcome-back{
+    letter-spacing: -3px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 24px;
+    font-family: 'SpotifyBold','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.welcome-back h1{
+    margin: 5px;
+}
+.welcome-back img{
+    margin: 0px;
+    width: 50px;
+    -webkit-user-drag:none;
+}
+form.login, form.signup{
+   font-family: 'SpotifyBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form.login button, form.signup button{
+    color:#121212;
+    font-family: 'SpotifyBold','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    background: #1ed760;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 120px;
+    font-size: 15px;
+    transition: transform 0.1s ;
+}
+form.login button:hover, form.signup button:hover{
+    background-color: #3be477;
+    transform: scale(1.05);
+}
+form.login button:active, form.signup button:active{
+    background-color: #1abc54;
+    transform: scale(1);
+}
+form.login input, form.signup input{
+    background-color: #121212;
+    border: solid 1px grey;
+    padding: 9px;
+    border-radius: 5px;
+    width: 250px;
+    color: white;
+    font-family: 'SpotifyRegular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.sign-up-option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'SpotifyRegular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sign-up-option p{
+    color: rgb(183, 183, 183)
+}
+.sign-up-option a{
+    color: white;
+    text-decoration: none;
+    font-family: 'SpotifyBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.sign-up-option a:hover{
+    transform: scale(1.02)
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'SpotifyRegular','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(183, 183, 183);
+    font-size: 12px;
+    margin: 30px;
+}
+footer a{
+    color: inherit
+}
+footer a:hover{
+    color:#1ed760
+}

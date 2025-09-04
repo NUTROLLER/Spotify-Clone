@@ -34,7 +34,7 @@ const playMusic = (track, pause = false) => {
     highlightCurrentSong =  currentSong.src.toString().split("/")[4];
     
     
-    songName = track.trim().replaceAll(".mp3", "").replaceAll("by", " — ").replaceAll("-", " ")
+    let songName = track.trim().replaceAll(".mp3", "").replaceAll("by", " — ").replaceAll("-", " ")
     document.querySelector(".songInfo").innerHTML = songName;
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00"
 }
@@ -133,5 +133,59 @@ next.addEventListener("click", () => {
     if (index + 1 < songs.length) {
         playMusic(songs[index + 1])
         console.log("This is index: " + index)
+    }
+})
+//Sign up and login buttons lead somewhere
+const signupbtn = document.getElementById("signup")
+signupbtn.addEventListener('click', ()=>{
+    window.location.href = "signup.html"
+})
+const loginbtn = document.getElementById("login")
+loginbtn.addEventListener('click', ()=>{
+    window.location.href = "login.html"
+})
+const logoutbtn = document.getElementById("logout")
+
+//Post-Authentication website updation
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+import { 
+  getAuth, signOut, onAuthStateChanged
+ } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js';
+const firebaseConfig = {
+  apiKey: "AIzaSyCLkHnlw9-cX6ec-6sEN7akSJe9ysBGoP0",
+  authDomain: "first-proj-firebase9.firebaseapp.com",
+  projectId: "first-proj-firebase9",
+  storageBucket: "first-proj-firebase9.firebasestorage.app",
+  messagingSenderId: "849709724050",
+  appId: "1:849709724050:web:ef367fc48a585d0224914b"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth()
+const userEmailDisplay = document.getElementById("user-email-id")
+onAuthStateChanged(auth, (user)=>{
+    //Logged in
+    if (user){
+        const email = user.email;
+        userEmailDisplay.textContent = `Welcome, ${email}`;
+        signupbtn.style.display = 'none';
+        loginbtn.style.display = 'none'
+        logoutbtn.style.display = 'flex';
+        logoutbtn.addEventListener('click', ()=>{
+            signOut(auth)
+            .then(()=>{
+                alert("Signed out successfuly")
+                signupbtn.style.display = 'inline';
+                loginbtn.style.display = 'inline'
+            })
+            .catch((err)=>{
+                alert("Some error occurred while signing out. Please try later.")
+            })
+        })
+    }
+    //Not logged in
+    else{
+        userEmailDisplay.textContent = '';
+        logoutbtn.style.display = 'none'
     }
 })
